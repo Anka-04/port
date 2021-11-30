@@ -1,0 +1,29 @@
+.skills {
+    min-height: 770px;
+    &__item {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+    }
+    &__column {
+        display: grid;
+        margin-top: 85px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    &__logo {
+        height: 70px;
+        margin: 25px auto 15px 30px;
+    }
+    &__block {
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        padding: 15px 30px 30px 30px;
+    }
+}

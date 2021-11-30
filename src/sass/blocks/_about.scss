@@ -1,0 +1,27 @@
+.about {
+    padding-top: 50px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+    }
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #000000;
+    }
+    .divider {
+        margin: 0 0 15px 0;
+    }
+}
