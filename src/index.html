@@ -76,12 +76,11 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -112,17 +111,23 @@
             <div class="title title_fz16 promo__subtitle">Меня зовут Анна Бурдо</div>
             <h1 class="title title_fz48 promo__title">Я html-верстальщик</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btns">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#portfolio" class="promo__link btns">Портфолио</a>
+                <a href="#about" class="promo__link">Про меня</a>
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
+                <picture>
+                    <source srcset="img/photo_min_webp.webp">
                     <img src="img/main_photo.jpg" alt="photo">
+                </picture>
                 </div>
+                <!--<div class="about__photo">
+                    <img src="img/main_photo.jpg" alt="photo">
+                </div>-->
                 <div class="about__descr">
                     <div class="title title_fz16 about__subtitle">Про меня</div>
                     <h1 class="title title_fz36 about__title">Меня зовут Анна</h1>
@@ -134,7 +139,7 @@
             </div>
         </div>
     </section>
-    <section class="resume">
+    <section class="resume" id="resume">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
             <div class="title title_fz36 title__section-subtitle">Чем я буду полезна</div>
@@ -211,7 +216,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h3 class="title title_fz16 title__section-title">Навыки</h3>
             <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
@@ -269,7 +274,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h3 class="title title_fz16 title__section-title">Портфолио</h3>
             <div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -284,7 +289,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__descr">
@@ -333,14 +338,15 @@
         </div>
     </section> 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/script.js"></script>
-
-    <!--<script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>-->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

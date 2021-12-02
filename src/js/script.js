@@ -14,10 +14,6 @@ closeElem.addEventListener('click', () => {
 $('form').submit(function(e) {
     e.preventDefault();
 
-    if(!$(this).valid()) {
-        return;
-    }
-
 
     $.ajax({
         type: "POST",
