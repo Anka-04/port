@@ -112,7 +112,7 @@
             <h1 class="title title_fz48 promo__title">Я html-верстальщик</h1>
             <div class="promo__btns">
                 <a href="#portfolio" class="promo__link btns">Портфолио</a>
-                <a href="#about" class="promo__link">Про меня</a>
+                <a href="#about" class="promo__link btns">Про меня</a>
             </div>
         </div>
     </section>
@@ -120,14 +120,13 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                <picture>
-                    <source srcset="img/photo_min_webp.webp">
-                    <img src="img/main_photo.jpg" alt="photo">
-                </picture>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/main_photo_min.jpg">
+                        <source media="(mix-width: 769px)" srcset="img/main_photo.jpg">
+                        <!--<source type="image/webp" srcset="img/photo_min_webp.webp">-->
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
-                <!--<div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
-                </div>-->
                 <div class="about__descr">
                     <div class="title title_fz16 about__subtitle">Про меня</div>
                     <h1 class="title title_fz36 about__title">Меня зовут Анна</h1>
@@ -139,7 +138,7 @@
             </div>
         </div>
     </section>
-    <section class="resume" id="resume">
+   <section class="resume" id="resume">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
             <div class="title title_fz36 title__section-subtitle">Чем я буду полезна</div>
@@ -301,7 +300,7 @@
                         <a href="mailto:relaxation.ee@gmail.com" class="contacts__link">
                             <img src="icons/contact/email.svg" alt="email">
                             relaxation.ee@gmail.com
-                        </a>
+                        </a> <br>
                         <a href="skype:[skaipuskype]" class="contacts__link">
                             <img src="icons/contact/skype.svg" alt="skype">
                             skaipuskype
