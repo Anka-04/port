@@ -28,3 +28,8 @@ $('form').submit(function(e) {
     });
     return false;
 });
+
+
+$('.modal__close').on('click', function() {
+    $('.overlay, #thanks').fadeOut('slow');
+});
