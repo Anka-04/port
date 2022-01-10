@@ -1,4 +1,28 @@
 <?php 
+// ваш секретный ключ
+$secret = '6LcGmbodAAAAAH0AKOaM4f4sLv3Itsy8Oua8XAF6';//6LejEsIdAAAAALsgSMpfPxcjwjq-3CqMAq7Gu4qk
+// однократное включение файла autoload.php (клиентская библиотека reCAPTCHA PHP)
+require_once (dirname(__FILE__).'/recaptcha/autoload.php');
+// если в массиве $_POST существует ключ g-recaptcha-response, то...
+if (isset($_POST['g-recaptcha-response'])) {
+  // создать экземпляр службы recaptcha, используя секретный ключ
+  $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+  // получить результат проверки кода recaptcha
+  $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+  // если результат положительный, то...
+  if ($resp->isSuccess()){
+    //ok
+  } else {
+    header('HTTP/1.1 500 Wrong Capcha');
+	return;
+  }
+
+} else {
+	header('HTTP/1.1 500 No Capcha');
+	return;
+}
+//////////////////////////////////////////////////////////////////
+
 
 $name = $_POST['name'];
 $text = $_POST['text'];

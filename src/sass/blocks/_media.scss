@@ -2,6 +2,12 @@
     .sidepanel {
         display: none;
     }
+    .cookie_notice {
+        font-size: 13px;
+    }
+    .cookie_btn {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -253,9 +259,6 @@
             display: flex;
             justify-content: center;
             font-size: 12px;
-        }
-        &__descr {
-            padding: 15px;
         }
         &__form {
             grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
